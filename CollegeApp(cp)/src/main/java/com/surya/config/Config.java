@@ -21,6 +21,8 @@ public class Config {
 	@Bean
 	public DataSource createDs() {
 
+		
+		//creating connection pool by creating the object of the class which is implementing datasource interface
 		HikariDataSource config = new HikariDataSource();
 
 		config.setJdbcUrl(environment.getProperty("jdbc.url"));
